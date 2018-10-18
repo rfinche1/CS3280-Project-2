@@ -13,7 +13,6 @@ def validateColorsList(colors):
     @return true if colors is a valid list of colors,
     false otherwise
     '''
-
     if colors is None:
         raise ValueError('Colors list cannot be None.')
 
@@ -105,6 +104,23 @@ def isFourthBandValid(color):
 
     @param color    the color of the band
 
+    @preconditions color != 'black' and color != 'orange'
+                    and color != 'yellow' and color != 'white'
+
+    @return true if the band is a valid color,
+    false otherwise
+    '''
+    invalidBandColors = ['black', 'orange', 'yellow', 'white']
+    return color not in invalidBandColors
+
+
+def isFourthBandValidOfFiveBandResistor(color):
+    '''
+    Returns true if the color of the fourth band is
+    a valid color for that band, and false otherwise
+
+    @param color    the color of the band
+
     @preconditions color != 'none'
 
     @return true if the band is a valid color,
@@ -114,7 +130,7 @@ def isFourthBandValid(color):
     return color not in invalidBandColors
 
 
-def isFifthBandValid(color):
+def isFifthBandValidOfFiveBandResistor(color):
     '''
     Returns true if the color of the fifth band is
     a valid color for that band, and false otherwise
@@ -177,10 +193,10 @@ def validateFiveBandResistorColorsList(colors):
     if not isThirdBandValid(band3):
         raise ValueError(band3 + ' is not allowed in the third band.')
 
-    if not isFourthBandValid(band4):
+    if not isFourthBandValidOfFiveBandResistor(band4):
         raise ValueError(band4 + ' is not allowed in the fourth band.')
 
-    if not isFifthBandValid(band5):
+    if not isFifthBandValidOfFiveBandResistor(band5):
         raise ValueError(band5 + ' is not allowed in the fifth band.')
 
     return True
@@ -196,3 +212,16 @@ def colorsContainsOnlyValidColors(colors):
     for band in colors:
         if not isValidColor(band):
             raise ValueError(str(band) + ' is not a valid color.')
+
+
+def decodeTolerance(colors):
+    '''
+    Returns the tolerance as a floating-point number.
+    In the case of a four band resistor, the tolerance will
+    be the fourth color. In the case of a five band resistor,
+    the tolerance will be the fifth color.
+
+    @param colors   the list of colors
+
+    @return a floating-point number representing the tolerance.
+    '''

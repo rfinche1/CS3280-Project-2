@@ -66,7 +66,7 @@ class TestValidateColorsList(unittest.TestCase):
 
     def testValidateColorsListWithFourColorsWhenFourthColorIsNone(self):
         colors = ['black', 'brown', 'red', 'none']
-        self.assertRaises(ValueError, validateColorsList, colors)
+        self.assertTrue(validateColorsList(colors))
 
     def testInvalidFirstBandInColorsListWithFourColors(self):
         colors = ['maroon', 'brown', 'red', 'blue']
@@ -110,6 +110,22 @@ class TestValidateColorsList(unittest.TestCase):
 
     def testSilverInFirstBandGoldInSecondAndLastTwoValidColors(self):
         colors = ['silver', 'gold', 'red', 'blue']
+        self.assertRaises(ValueError, validateColorsList, colors)
+
+    def testValidateColorsListWhenBlackInFourthBandOfFourBandColorList(self):
+        colors = ['black', 'brown', 'red', 'black']
+        self.assertRaises(ValueError, validateColorsList, colors)
+
+    def testValidateColorsListWhenOrangeInFourthBandOfFourBandColorList(self):
+        colors = ['black', 'brown', 'red', 'orange']
+        self.assertRaises(ValueError, validateColorsList, colors)
+
+    def testValidateColorsListWhenYellowInFourthBandOfFourBandColorList(self):
+        colors = ['black', 'brown', 'red', 'yellow']
+        self.assertRaises(ValueError, validateColorsList, colors)
+
+    def testValidateColorsListWhenWhiteInFourthBandOfFourBandColorList(self):
+        colors = ['black', 'brown', 'red', 'white']
         self.assertRaises(ValueError, validateColorsList, colors)
 
     def testValidateColorsListWhenSilverInThirdBandInColorsList(self):
