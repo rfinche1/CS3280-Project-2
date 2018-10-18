@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" name="validate_colors_list_tests.TestValidateColorsList-20181018071631" skipped="0" tests="14" time="0.002" timestamp="2018-10-18T07:16:31">
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testGoldInFirstBandInColorsListWithFourColors" time="0.001" timestamp="2018-10-18T07:16:31"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testGoldInFirstBandSilverInSecondAndLastTwoValidColors" time="0.000" timestamp="2018-10-18T07:16:31"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testGoldInSecondBandInColorsListWithFourColors" time="0.000" timestamp="2018-10-18T07:16:31"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testInvalidFirstBandInColorsListWithFourColors" time="0.000" timestamp="2018-10-18T07:16:31"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testSilverInFirstBandGoldInSecondAndLastTwoValidColors" time="0.000" timestamp="2018-10-18T07:16:31"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testSilverInFirstBandInColorsListWithFourColors" time="0.000" timestamp="2018-10-18T07:16:31"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testSilverInSecondBandInColorsListWithOthersValide" time="0.000" timestamp="2018-10-18T07:16:31"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListContainsOneColor" time="0.000" timestamp="2018-10-18T07:16:31"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListContainsSixColors" time="0.000" timestamp="2018-10-18T07:16:31"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListContainsThreeColors" time="0.000" timestamp="2018-10-18T07:16:31"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListContainsTwoColors" time="0.000" timestamp="2018-10-18T07:16:31"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListIsEmpty" time="0.000" timestamp="2018-10-18T07:16:31"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListIsNone" time="0.000" timestamp="2018-10-18T07:16:31"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testSilverInThirdBandInColorsList" time="0.001" timestamp="2018-10-18T07:16:31">
+		<error message="brown is not allowed in the second band." type="ValueError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/validate_colors_list_tests.py", line 61, in testSilverInThirdBandInColorsList
+    self.assertEquals(validateColorsList(colors), True)
+  File "/Users/ras/Projects/Python/cs3280/project2/src/main/python/resistor.py", line 36, in validateColorsList
+    raise ValueError(band2 + " is not allowed in the second band.")
+ValueError: brown is not allowed in the second band.
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

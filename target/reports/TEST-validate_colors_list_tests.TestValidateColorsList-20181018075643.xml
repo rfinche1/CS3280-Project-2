@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="validate_colors_list_tests.TestValidateColorsList-20181018075643" skipped="0" tests="23" time="0.003" timestamp="2018-10-18T07:56:43">
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testAllFourColorsInvalidInColorsListWithFourColors" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testGoldInFirstBandInColorsListWithFourColors" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testGoldInFirstBandSilverInSecondAndLastTwoValidColors" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testGoldInFourthBandInColorsList" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testGoldInSecondBandInColorsListWithFourColors" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testGoldInThirdBandInColorsList" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testInvalidFirstBandInColorsListWithFourColors" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testInvalidFourthColorInColorsListWithFourColors" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testInvalidSecondBandInColorsListWithFourColors" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testInvalidThirdBandInColorsListWithFourColors" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testSilverInFirstBandGoldInSecondAndLastTwoValidColors" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testSilverInFirstBandInColorsListWithFourColors" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testSilverInFourthBandInColorsList" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testSilverInSecondBandInColorsListWithOthersValide" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testSilverInThirdBandInColorsList" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidFourBandResistor" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListContainsOneColor" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListContainsSixColors" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListContainsThreeColors" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListContainsTwoColors" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListIsEmpty" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListIsNone" time="0.000" timestamp="2018-10-18T07:56:43"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidFiveBandResistor" time="0.001" timestamp="2018-10-18T07:56:43">
+		<failure message="False is not true" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/validate_colors_list_tests.py", line 97, in testValidFiveBandResistor
+    ['black', 'brown', 'red', 'blue', 'brown']))
+AssertionError: False is not true
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
