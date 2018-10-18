@@ -62,7 +62,7 @@ def isFirstBandValid(color):
     @return true if the band is a valid color,
     false otherwise
     '''
-    invalidBandColors = ['gold', 'silver']
+    invalidBandColors = ['gold', 'silver', 'none']
     return color not in invalidBandColors
 
 
@@ -78,7 +78,39 @@ def isSecondBandValid(color):
     @return true if the band is a valid color,
     false otherwise
     '''
-    invalidBandColors = ['gold', 'silver']
+    invalidBandColors = ['gold', 'silver', 'none']
+    return color not in invalidBandColors
+
+
+def isThirdBandValid(color):
+    '''
+    Returns true if the color of the third band is
+    a valid color for that band, and false otherwise
+
+    @param color    the color of the band
+
+    @preconditions color != 'none'
+
+    @return true if the band is a valid color,
+    false otherwise
+    '''
+    invalidBandColors = ['none']
+    return color not in invalidBandColors
+
+
+def isFourthBandValid(color):
+    '''
+    Returns true if the color of the fourth band is
+    a valid color for that band, and false otherwise
+
+    @param color    the color of the band
+
+    @preconditions color != 'none'
+
+    @return true if the band is a valid color,
+    false otherwise
+    '''
+    invalidBandColors = ['none']
     return color not in invalidBandColors
 
 
@@ -116,6 +148,12 @@ def validateFourBandResistorColorsList(colors):
     if not isSecondBandValid(band2):
         raise ValueError(band2 + ' is not allowed in the second band.')
 
+    if not isThirdBandValid(band3):
+        raise ValueError(band3 + ' is not allowed in the third band.')
+
+    if not isFourthBandValid(band4):
+        raise ValueError(band4 + ' is not allowed in the fourth band.')
+
     return True
 
 
@@ -135,6 +173,12 @@ def validateFiveBandResistorColorsList(colors):
 
     if not isSecondBandValid(band2):
         raise ValueError(band2 + ' is not allowed in the second band.')
+
+    if not isThirdBandValid(band3):
+        raise ValueError(band3 + ' is not allowed in the third band.')
+
+    if not isFourthBandValid(band4):
+        raise ValueError(band4 + ' is not allowed in the fourth band.')
 
     if not isFifthBandValid(band5):
         raise ValueError(band5 + ' is not allowed in the fifth band.')
