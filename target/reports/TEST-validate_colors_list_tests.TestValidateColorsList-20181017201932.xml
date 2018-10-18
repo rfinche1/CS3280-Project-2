@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="validate_colors_list_tests.TestValidateColorsList-20181017201932" skipped="0" tests="1" time="0.001" timestamp="2018-10-17T20:19:32">
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testColorsListIsNone" time="0.001" timestamp="2018-10-17T20:19:32">
+		<failure message="True is not false" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/validate_colors_list_tests.py", line 10, in testColorsListIsNone
+    self.assertFalse(result)
+AssertionError: True is not false
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

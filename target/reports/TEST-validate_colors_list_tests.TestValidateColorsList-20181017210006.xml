@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="3" failures="0" name="validate_colors_list_tests.TestValidateColorsList-20181017210006" skipped="0" tests="3" time="0.001" timestamp="2018-10-17T21:00:06">
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListContainsOneColor" time="0.001" timestamp="2018-10-17T21:00:06">
+		<error message="The colors list must contain at least four colors." type="ValueError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/validate_colors_list_tests.py", line 15, in testValidateColorsListWhenColorsListContainsOneColor
+    self.assertRaises(ValueError, validateColorsList(['black']))
+  File "/Users/ras/Projects/Python/cs3280/project2/src/main/python/resistor.py", line 18, in validateColorsList
+    raise ValueError("The colors list must contain at least four colors.")
+ValueError: The colors list must contain at least four colors.
+]]>		</error>
+	</testcase>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListIsEmpty" time="0.000" timestamp="2018-10-17T21:00:06">
+		<error message="The colors list cannot be empty." type="ValueError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/validate_colors_list_tests.py", line 12, in testValidateColorsListWhenColorsListIsEmpty
+    self.assertRaises(ValueError, validateColorsList([]))
+  File "/Users/ras/Projects/Python/cs3280/project2/src/main/python/resistor.py", line 15, in validateColorsList
+    raise ValueError("The colors list cannot be empty.")
+ValueError: The colors list cannot be empty.
+]]>		</error>
+	</testcase>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListIsNone" time="0.000" timestamp="2018-10-17T21:00:06">
+		<error message="Colors list cannot be None." type="ValueError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/validate_colors_list_tests.py", line 8, in testValidateColorsListWhenColorsListIsNone
+    validateColorsList(None)
+  File "/Users/ras/Projects/Python/cs3280/project2/src/main/python/resistor.py", line 12, in validateColorsList
+    raise ValueError("Colors list cannot be None.")
+ValueError: Colors list cannot be None.
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

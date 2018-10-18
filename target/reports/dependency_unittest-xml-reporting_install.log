@@ -1,0 +1,8 @@
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+You are using pip version 9.0.3, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+xml-reporting~=2.0)
+  Downloading https://files.pythonhosted.org/packages/67/4b/141a581104b1f6397bfa78ac9d43d8ad29a7ca43ea90a2d863fe3056e86a/six-1.11.0-py2.py3-none-any.whl
+Installing collected packages: six, unittest-xml-reporting
+Successfully installed six-1.11.0 unittest-xml-reporting-2.2.0

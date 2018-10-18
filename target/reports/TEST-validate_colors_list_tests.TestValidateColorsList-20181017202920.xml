@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" name="validate_colors_list_tests.TestValidateColorsList-20181017202920" skipped="0" tests="4" time="0.001" timestamp="2018-10-17T20:29:20">
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListContainsOneColor" time="0.000" timestamp="2018-10-17T20:29:20"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListIsEmpty" time="0.000" timestamp="2018-10-17T20:29:20"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListIsNone" time="0.000" timestamp="2018-10-17T20:29:20"/>
+	<testcase classname="validate_colors_list_tests.TestValidateColorsList" name="testValidateColorsListWhenColorsListContainsTwoColors" time="0.001" timestamp="2018-10-17T20:29:20">
+		<error message="'TestValidateColorsList' object has no attribute 'asertFalse'" type="AttributeError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/validate_colors_list_tests.py", line 25, in testValidateColorsListWhenColorsListContainsTwoColors
+    self.asertFalse(result)
+AttributeError: 'TestValidateColorsList' object has no attribute 'asertFalse'
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
