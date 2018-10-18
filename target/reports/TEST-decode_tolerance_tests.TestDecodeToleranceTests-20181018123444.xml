@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" name="decode_tolerance_tests.TestDecodeToleranceTests-20181018123444" skipped="0" tests="16" time="0.002" timestamp="2018-10-18T12:34:44">
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsBlue" time="0.000" timestamp="2018-10-18T12:34:44"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsBrown" time="0.000" timestamp="2018-10-18T12:34:44"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsGreen" time="0.000" timestamp="2018-10-18T12:34:44"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsNone" time="0.000" timestamp="2018-10-18T12:34:44"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsRed" time="0.000" timestamp="2018-10-18T12:34:44"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsSilver" time="0.000" timestamp="2018-10-18T12:34:44"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsViolet" time="0.000" timestamp="2018-10-18T12:34:44"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsBlue" time="0.000" timestamp="2018-10-18T12:34:44"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsBrown" time="0.000" timestamp="2018-10-18T12:34:44"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsGold" time="0.000" timestamp="2018-10-18T12:34:44"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsGreen" time="0.000" timestamp="2018-10-18T12:34:44"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsNone" time="0.000" timestamp="2018-10-18T12:34:44"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsRed" time="0.000" timestamp="2018-10-18T12:34:44"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsSilver" time="0.000" timestamp="2018-10-18T12:34:44"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsViolet" time="0.000" timestamp="2018-10-18T12:34:44"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsGold" time="0.001" timestamp="2018-10-18T12:34:44">
+		<error message="blackgold is not a valid color." type="ValueError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/decode_tolerance_tests.py", line 60, in testDecodeToleranceWhenFiveBandResistorAndFifthBandIsGold
+    result = decodeTolerance(['black', 'brown', 'red', 'black' 'gold'])
+  File "/Users/ras/Projects/Python/cs3280/project2/src/main/python/resistor.py", line 238, in decodeTolerance
+    validateColorsList(colors)
+  File "/Users/ras/Projects/Python/cs3280/project2/src/main/python/resistor.py", line 38, in validateColorsList
+    colorsContainsOnlyValidColors(colors)
+  File "/Users/ras/Projects/Python/cs3280/project2/src/main/python/resistor.py", line 224, in colorsContainsOnlyValidColors
+    raise ValueError(str(band) + ' is not a valid color.')
+ValueError: blackgold is not a valid color.
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

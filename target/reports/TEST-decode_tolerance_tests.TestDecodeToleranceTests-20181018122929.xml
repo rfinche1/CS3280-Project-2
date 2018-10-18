@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="decode_tolerance_tests.TestDecodeToleranceTests-20181018122929" skipped="0" tests="9" time="0.001" timestamp="2018-10-18T12:29:29">
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsBlue" time="0.000" timestamp="2018-10-18T12:29:29"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsBrown" time="0.000" timestamp="2018-10-18T12:29:29"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsGold" time="0.000" timestamp="2018-10-18T12:29:29"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsGreen" time="0.000" timestamp="2018-10-18T12:29:29"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsNone" time="0.000" timestamp="2018-10-18T12:29:29"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsRed" time="0.000" timestamp="2018-10-18T12:29:29"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsSilver" time="0.000" timestamp="2018-10-18T12:29:29"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsViolet" time="0.000" timestamp="2018-10-18T12:29:29"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsBrown" time="0.001" timestamp="2018-10-18T12:29:29">
+		<failure message="None != 1.0" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/decode_tolerance_tests.py", line 41, in testDecodeToleranceWhenFiveBandResistorAndFifthBandIsBrown
+    self.assertEquals(result, 1.0)
+AssertionError: None != 1.0
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

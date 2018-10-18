@@ -2,6 +2,16 @@ valid_colors = ['black', 'brown', 'red', 'orange',
                 'yellow', 'green', 'blue', 'violet',
                 'grey', 'white', 'gold', 'silver', 'none']
 
+tolerances = {'brown': 1.0,
+              'red': 2.0,
+              'green': 0.5,
+              'blue': 0.25,
+              'violet': 0.1,
+              'grey': 0.5,
+              'gold': 5.0,
+              'silver': 10.0,
+              'none': 20.0}
+
 
 def validateColorsList(colors):
     '''
@@ -206,7 +216,7 @@ def colorsContainsOnlyValidColors(colors):
     '''
     Raises a ValueError if any of the colors in the passed list
     are not in the list valid_colors
-    
+
     @param colors   the list of colors being checked
     '''
     for band in colors:
@@ -225,3 +235,27 @@ def decodeTolerance(colors):
 
     @return a floating-point number representing the tolerance.
     '''
+    validateColorsList(colors)
+    if len(colors) == 4:
+        return decodeToleranceOfFourBandResistor(colors)
+
+    if len(colors) == 5:
+        return decodeToleranceOfFiveBandResistor(colors)
+
+
+def decodeToleranceOfFourBandResistor(colors):
+    '''
+    TODO: Spec
+    '''
+    (_, _, _, band4) = colors
+
+    return tolerances.get(band4)
+
+
+def decodeToleranceOfFiveBandResistor(colors):
+    '''
+    TODO: Spec
+    '''
+    (_, _, _, _, band5) = colors
+
+    return tolerances.get(band5)

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="decode_tolerance_tests.TestDecodeToleranceTests-20181018122347" skipped="0" tests="2" time="0.000" timestamp="2018-10-18T12:23:47">
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsBrown" time="0.000" timestamp="2018-10-18T12:23:47"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsRed" time="0.000" timestamp="2018-10-18T12:23:47"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
