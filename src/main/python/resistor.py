@@ -1,6 +1,6 @@
 valid_colors = ['black', 'brown', 'red', 'orange',
                 'yellow', 'green', 'blue', 'violet',
-                'grey', 'white', 'gold', 'silver']
+                'grey', 'white', 'gold', 'silver', 'none']
 
 
 def validateColorsList(colors):
@@ -101,7 +101,12 @@ def isFifthBandValid(color):
 
 def validateFourBandResistorColorsList(colors):
     '''
-    TODO: Spec
+    Raises a ValueError if the first or second band contains a
+    disallowed color. Returns true if all bands are allowed colors
+
+    @param colors   the list of resistor colors
+
+    @return True if a ValueError is not raised
     '''
     (band1, band2, band3, band4) = colors
 
@@ -116,7 +121,12 @@ def validateFourBandResistorColorsList(colors):
 
 def validateFiveBandResistorColorsList(colors):
     '''
-    TODO: Spec
+    Raises a ValueError if the first, second, or fifth band contains a
+    disallowed color. Returns true if all bands are allowed colors
+
+    @param colors   the list of resistor colors
+
+    @return True if a ValueError is not raised
     '''
     (band1, band2, band3, band4, band5) = colors
 
@@ -134,7 +144,10 @@ def validateFiveBandResistorColorsList(colors):
 
 def colorsContainsOnlyValidColors(colors):
     '''
-    TODO: Spec
+    Raises a ValueError if any of the colors in the passed list
+    are not in the list valid_colors
+    
+    @param colors   the list of colors being checked
     '''
     for band in colors:
         if not isValidColor(band):

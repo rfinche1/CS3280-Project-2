@@ -29,8 +29,24 @@ class TestValidateColorsList(unittest.TestCase):
         self.assertRaises(ValueError, validateColorsList, colors)
 
     def testValidateColorsListWithFourColorsWhenFirstColorIsNone(self):
-        colors = [None, 'brown', 'red', 'blue']
-        self.assertRaises(ValueError, validateColorsList, colors)
+        colors = ['none', 'brown', 'red', 'blue']
+        self.assertTrue(validateColorsList(colors))
+
+    def testValidateColorsListWithFourColorsWhenSecondColorIsNone(self):
+        colors = ['black', 'none', 'red', 'blue']
+        self.assertTrue(validateColorsList(colors))
+
+    def testValidateColorsListWithFourColorsWhenThirdColorIsNone(self):
+        colors = ['black', 'brown', 'none', 'blue']
+        self.assertTrue(validateColorsList(colors))
+
+    def testValidateColorsListWithFourColorsWhenAllAreNone(self):
+        colors = ['none', 'none', 'none', 'none']
+        self.assertTrue(validateColorsList(colors))
+
+    def testValidateColorsListWithFourColorsWhenFourthColorIsNone(self):
+        colors = ['black', 'brown', 'red', 'none']
+        self.assertTrue(validateColorsList(colors))
 
     def testInvalidFirstBandInColorsListWithFourColors(self):
         colors = ['maroon', 'brown', 'red', 'blue']
