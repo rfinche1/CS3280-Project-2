@@ -26,8 +26,10 @@ def validateColorsList(colors):
         raise ValueError("The colors list must contain at least four colors.")
 
     if len(colors) == 4:
-        for color in colors:
-            isValidColor(color)
+        (band1, band2, band3, band4) = colors
+        for band in colors:
+            if not isValidColor(band):
+                raise ValueError(band + " is not a valid color")
 
 
 def isValidColor(color):

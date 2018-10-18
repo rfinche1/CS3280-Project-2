@@ -27,3 +27,7 @@ class TestValidateColorsList(unittest.TestCase):
     def testValidateColorsListWhenColorsListContainsSixColors(self):
         colors = ['black', 'brown', 'red', 'blue', 'green', 'white']
         self.assertRaises(ValueError, validateColorsList, colors)
+
+    def testInvalidFirstBandInColorsListWithFourColors(self):
+        colors = ['maroon', 'brown', 'red', 'blue']
+        self.assertRaises(ValueError, validateColorsList, colors)
