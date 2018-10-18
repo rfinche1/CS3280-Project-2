@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="decode_multiplier_tests.TestDecodeToleranceTests-20181018141148" skipped="0" tests="1" time="0.000" timestamp="2018-10-18T14:11:48">
+	<testcase classname="decode_multiplier_tests.TestDecodeToleranceTests" name="testDecodeMultiplierWhenMultiplierBandIsBlack" time="0.000" timestamp="2018-10-18T14:11:48"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

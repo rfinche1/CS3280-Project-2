@@ -12,6 +12,19 @@ tolerances = {'brown': 1.0,
               'silver': 10.0,
               'none': 20.0}
 
+multipliers = {'black': (1, ''),
+               'brown': (10, ''),
+               'red': (100, ''),
+               'orange': (1, 'K'),
+               'yellow': (10, 'K'),
+               'green': (100, 'K'),
+               'blue': (1, 'M'),
+               'violet': (10, 'M'),
+               'grey': (100, 'M'),
+               'white': (1, 'G'),
+               'gold': (0.1, ''),
+               'silver': (0.01, '')}
+
 
 def validateColorsList(colors):
     '''
@@ -35,18 +48,18 @@ def validateColorsList(colors):
     if len(colors) > 5:
         raise ValueError('The colors list must contain at least four colors.')
 
-    colorsContainsOnlyValidColors(colors)
+    _colorsContainsOnlyValidColors(colors)
 
     if len(colors) == 4:
-        validateFourBandResistorColorsList(colors)
+        _validateFourBandResistorColorsList(colors)
 
     if len(colors) == 5:
-        validateFiveBandResistorColorsList(colors)
+        _validateFiveBandResistorColorsList(colors)
 
     return True
 
 
-def isValidColor(color):
+def _isValidColor(color):
     '''
     Returns true if the color is a valid color,
     false otherwise
@@ -59,7 +72,7 @@ def isValidColor(color):
     return color in valid_colors
 
 
-def isFirstBandValid(color):
+def _isFirstBandColorAllowed(color):
     '''
     Returns true if the color of the first band is
     a valid color for that band, and false otherwise.
@@ -75,7 +88,7 @@ def isFirstBandValid(color):
     return color not in invalidBandColors
 
 
-def isSecondBandValid(color):
+def _isSecondBandColorAllowed(color):
     '''
     Returns true if the color of the second band is
     a valid color for that band, and false otherwise
@@ -91,7 +104,7 @@ def isSecondBandValid(color):
     return color not in invalidBandColors
 
 
-def isThirdBandValid(color):
+def _isThirdBandColorAllowed(color):
     '''
     Returns true if the color of the third band is
     a valid color for that band, and false otherwise
@@ -107,7 +120,7 @@ def isThirdBandValid(color):
     return color not in invalidBandColors
 
 
-def isFourthBandValid(color):
+def _isFourthBandColorAllowed(color):
     '''
     Returns true if the color of the fourth band is
     a valid color for that band, and false otherwise
@@ -124,7 +137,7 @@ def isFourthBandValid(color):
     return color not in invalidBandColors
 
 
-def isFourthBandValidOfFiveBandResistor(color):
+def _isFourthBandColorAllowedOfFiveBandResistor(color):
     '''
     Returns true if the color of the fourth band is
     a valid color for that band, and false otherwise
@@ -140,7 +153,7 @@ def isFourthBandValidOfFiveBandResistor(color):
     return color not in invalidBandColors
 
 
-def isFifthBandValidOfFiveBandResistor(color):
+def _isFifthBandColorAllowedOfFiveBandResistor(color):
     '''
     Returns true if the color of the fifth band is
     a valid color for that band, and false otherwise
@@ -157,7 +170,7 @@ def isFifthBandValidOfFiveBandResistor(color):
     return color not in invalidBandColors
 
 
-def validateFourBandResistorColorsList(colors):
+def _validateFourBandResistorColorsList(colors):
     '''
     Raises a ValueError if the first or second band contains a
     disallowed color. Returns true if all bands are allowed colors
@@ -168,22 +181,22 @@ def validateFourBandResistorColorsList(colors):
     '''
     (band1, band2, band3, band4) = colors
 
-    if not isFirstBandValid(band1):
+    if not _isFirstBandColorAllowed(band1):
         raise ValueError(band1 + ' is not allowed in the first band.')
 
-    if not isSecondBandValid(band2):
+    if not _isSecondBandColorAllowed(band2):
         raise ValueError(band2 + ' is not allowed in the second band.')
 
-    if not isThirdBandValid(band3):
+    if not _isThirdBandColorAllowed(band3):
         raise ValueError(band3 + ' is not allowed in the third band.')
 
-    if not isFourthBandValid(band4):
+    if not _isFourthBandColorAllowed(band4):
         raise ValueError(band4 + ' is not allowed in the fourth band.')
 
     return True
 
 
-def validateFiveBandResistorColorsList(colors):
+def _validateFiveBandResistorColorsList(colors):
     '''
     Raises a ValueError if the first, second, or fifth band contains a
     disallowed color. Returns true if all bands are allowed colors
@@ -194,25 +207,25 @@ def validateFiveBandResistorColorsList(colors):
     '''
     (band1, band2, band3, band4, band5) = colors
 
-    if not isFirstBandValid(band1):
+    if not _isFirstBandColorAllowed(band1):
         raise ValueError(band1 + ' is not allowed in the first band.')
 
-    if not isSecondBandValid(band2):
+    if not _isSecondBandColorAllowed(band2):
         raise ValueError(band2 + ' is not allowed in the second band.')
 
-    if not isThirdBandValid(band3):
+    if not _isThirdBandColorAllowed(band3):
         raise ValueError(band3 + ' is not allowed in the third band.')
 
-    if not isFourthBandValidOfFiveBandResistor(band4):
+    if not _isFourthBandColorAllowedOfFiveBandResistor(band4):
         raise ValueError(band4 + ' is not allowed in the fourth band.')
 
-    if not isFifthBandValidOfFiveBandResistor(band5):
+    if not _isFifthBandColorAllowedOfFiveBandResistor(band5):
         raise ValueError(band5 + ' is not allowed in the fifth band.')
 
     return True
 
 
-def colorsContainsOnlyValidColors(colors):
+def _colorsContainsOnlyValidColors(colors):
     '''
     Raises a ValueError if any of the colors in the passed list
     are not in the list valid_colors
@@ -220,7 +233,7 @@ def colorsContainsOnlyValidColors(colors):
     @param colors   the list of colors being checked
     '''
     for band in colors:
-        if not isValidColor(band):
+        if not _isValidColor(band):
             raise ValueError(str(band) + ' is not a valid color.')
 
 
@@ -237,25 +250,42 @@ def decodeTolerance(colors):
     '''
     validateColorsList(colors)
     if len(colors) == 4:
-        return decodeToleranceOfFourBandResistor(colors)
+        return _decodeToleranceOfFourBandResistor(colors)
 
     if len(colors) == 5:
-        return decodeToleranceOfFiveBandResistor(colors)
+        return _decodeToleranceOfFiveBandResistor(colors)
 
 
-def decodeToleranceOfFourBandResistor(colors):
+def _decodeToleranceOfFourBandResistor(colors):
     '''
     TODO: Spec
     '''
-    (_, _, _, band4) = colors
+    (_, _, _, toleranceBand) = colors
 
-    return tolerances.get(band4)
+    return tolerances.get(toleranceBand)
 
 
-def decodeToleranceOfFiveBandResistor(colors):
+def _decodeToleranceOfFiveBandResistor(colors):
     '''
     TODO: Spec
     '''
-    (_, _, _, _, band5) = colors
+    (_, _, _, _, toleranceBand) = colors
 
-    return tolerances.get(band5)
+    return tolerances.get(toleranceBand)
+
+
+def decodeMultiplier(colors):
+    '''
+    Returns a tuple whose first element is the numeric multiplier
+    and the second element is the prefix
+
+    @param colors   the list of colors
+
+    @return a tuple whose first element is the numeric multiplier
+    and the second element is the prefix
+    '''
+    validateColorsList(colors)
+
+    (_, _, _, multiplierBand, _) = colors
+
+    return multipliers.get(multiplierBand)

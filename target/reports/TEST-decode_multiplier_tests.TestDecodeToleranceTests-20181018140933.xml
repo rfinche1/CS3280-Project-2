@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" name="decode_multiplier_tests.TestDecodeToleranceTests-20181018140933" skipped="0" tests="1" time="0.001" timestamp="2018-10-18T14:09:33">
+	<testcase classname="decode_multiplier_tests.TestDecodeToleranceTests" name="testDecodeMultiplierWhenMultiplierBandIsBlack" time="0.001" timestamp="2018-10-18T14:09:33">
+		<error message="name 'assertEquals' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/decode_multiplier_tests.py", line 9, in testDecodeMultiplierWhenMultiplierBandIsBlack
+    assertEquals(decodeMultiplier(colors), (1, ''))
+NameError: name 'assertEquals' is not defined
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
