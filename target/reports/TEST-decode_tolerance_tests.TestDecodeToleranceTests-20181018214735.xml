@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="decode_tolerance_tests.TestDecodeToleranceTests-20181018214735" skipped="0" tests="16" time="0.001" timestamp="2018-10-18T21:47:35">
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsBlue" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsBrown" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsGold" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsGreen" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsNone" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsRed" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsSilver" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFiveBandResistorAndFifthBandIsViolet" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsBlue" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsBrown" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsGold" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsGreen" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsNone" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsRed" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsSilver" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<testcase classname="decode_tolerance_tests.TestDecodeToleranceTests" name="testDecodeToleranceWhenFourBandResistorAndFourthBandIsViolet" time="0.000" timestamp="2018-10-18T21:47:35"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

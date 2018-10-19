@@ -2,6 +2,21 @@ valid_colors = ['black', 'brown', 'red', 'orange',
                 'yellow', 'green', 'blue', 'violet',
                 'grey', 'white', 'gold', 'silver', 'none']
 
+'''
+valid_four_band_colors = {'band1': ['black', 'brown', 'red', 'orange',
+                                    'yellow', 'green', 'blue', 'violet',
+                                    'grey', 'white'],
+                          'band2': ['black', 'brown', 'red', 'orange',
+                                    'yellow', 'green', 'blue', 'violet',
+                                    'grey', 'white'],
+                          'band3': ['black', 'brown', 'red', 'orange',
+                                    'yellow', 'green', 'blue', 'violet',
+                                    'grey', 'white', 'gold', 'silver'],
+                          'band4': ['brown', 'red', 'green', 'blue'
+                                    'violet', 'grey', 'gold', 'silver',
+                                    'none']}
+'''
+
 tolerances = {'brown': 1.0,
               'red': 2.0,
               'green': 0.5,
@@ -24,6 +39,17 @@ multipliers = {'black': (1, ''),
                'white': (1, 'G'),
                'gold': (0.1, ''),
                'silver': (0.01, '')}
+
+significantFigures = {'black': 0,
+                      'brown': 1,
+                      'red': 2,
+                      'orange': 3,
+                      'yellow': 4,
+                      'green': 5,
+                      'blue': 6,
+                      'violet': 7,
+                      'grey': 8,
+                      'white': 9}
 
 
 def validateColorsList(colors):
@@ -286,6 +312,49 @@ def decodeMultiplier(colors):
     '''
     validateColorsList(colors)
 
-    (_, _, _, multiplierBand, _) = colors
+    if len(colors) == 4:
+        (_, _, multiplierBand, _) = colors
+        return multipliers.get(multiplierBand)
 
-    return multipliers.get(multiplierBand)
+    if len(colors) == 5:
+        (_, _, _, multiplierBand, _) = colors
+        return multipliers.get(multiplierBand)
+
+
+def decodeSignificantFigures(colors):
+    '''Returns an integer representing the numeric portion of the
+    resistance.
+
+    @param colors   the list of colors
+
+    @return an integer representing the numeric portion of the
+    resistance.
+    '''
+    validateColorsList(colors)
+
+    if len(colors) == 4:
+        (sigFigBand1, sigFigBand2, _, _) = colors
+        sigFig1 = str(significantFigures.get(sigFigBand1))
+        sigFig2 = str(significantFigures.get(sigFigBand2))
+
+        return int(sigFig1 + sigFig2)
+
+    if len(colors) == 5:
+        (sigFigBand1, sigFigBand2, sigFigBand3, _, _) = colors
+        sigFig1 = str(significantFigures.get(sigFigBand1))
+        sigFig2 = str(significantFigures.get(sigFigBand2))
+        sigFig3 = str(significantFigures.get(sigFigBand3))
+
+        return int(sigFig1 + sigFig2 + sigFig3)
+
+
+def createFormattedResistanceString(colors):
+    validateColorsList(colors)
+    sigFig = decodeSignificantFigures(colors)
+    print(sigFig)
+    multiplierNum, multiplierUnit = decodeMultiplier(colors)
+    tolerance = decodeTolerance(colors)
+
+    return str(sigFig * multiplierNum) + str(
+        multiplierUnit) + ' ohms +/- ' + str(
+        tolerance) + '%'

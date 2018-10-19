@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" name="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests-20181019161216" skipped="0" tests="1" time="0.001" timestamp="2018-10-19T16:12:16">
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackBrown" time="0.001" timestamp="2018-10-19T16:12:16">
+		<error message="name 'CreateFormattedResistanceString' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 9, in testCreateFormattedResistanceStringFourBandBlackBlackBlackBrown
+    result = CreateFormattedResistanceString(colors)
+NameError: name 'CreateFormattedResistanceString' is not defined
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

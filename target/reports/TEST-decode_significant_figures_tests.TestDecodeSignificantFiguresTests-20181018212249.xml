@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="decode_significant_figures_tests.TestDecodeSignificantFiguresTests-20181018212249" skipped="0" tests="1" time="0.001" timestamp="2018-10-18T21:22:49">
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSignificantFiguresWhenFourBandsWithBlackInBothBands" time="0.001" timestamp="2018-10-18T21:22:49">
+		<failure message="-1 != 0" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/decode_significant_figures_tests.py", line 9, in testDecodeSignificantFiguresWhenFourBandsWithBlackInBothBands
+    self.assertEquals(decodeSignificantFigures(colors), 0)
+AssertionError: -1 != 0
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

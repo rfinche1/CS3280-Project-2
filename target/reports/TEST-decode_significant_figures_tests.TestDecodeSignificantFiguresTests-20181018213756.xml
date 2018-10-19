@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="decode_significant_figures_tests.TestDecodeSignificantFiguresTests-20181018213756" skipped="0" tests="5" time="0.001" timestamp="2018-10-18T21:37:56">
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSigFigWhenFiveBandsWithBlackBlackBlack" time="0.000" timestamp="2018-10-18T21:37:56"/>
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSigFigWhenFiveBandsWithBlackBlackBrown" time="0.000" timestamp="2018-10-18T21:37:56"/>
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSigFigWhenFourBandsWithBlackBlack" time="0.000" timestamp="2018-10-18T21:37:56"/>
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSigFigWhenFourBandsWithBlackBrown" time="0.000" timestamp="2018-10-18T21:37:56"/>
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSigFigWhenFourBandsWithBlackRed" time="0.001" timestamp="2018-10-18T21:37:56">
+		<failure message="2 != 1" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/decode_significant_figures_tests.py", line 17, in testDecodeSigFigWhenFourBandsWithBlackRed
+    self.assertEquals(decodeSignificantFigures(colors), 1)
+AssertionError: 2 != 1
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="decode_significant_figures_tests.TestDecodeSignificantFiguresTests-20181018214009" skipped="0" tests="8" time="0.000" timestamp="2018-10-18T21:40:09">
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSigFigWhenFiveBandsWithBlackBlackBlack" time="0.000" timestamp="2018-10-18T21:40:09"/>
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSigFigWhenFiveBandsWithBlackBlackBrown" time="0.000" timestamp="2018-10-18T21:40:09"/>
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSigFigWhenFiveBandsWithBlackBlackOrange" time="0.000" timestamp="2018-10-18T21:40:09"/>
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSigFigWhenFiveBandsWithBlackBlackRed" time="0.000" timestamp="2018-10-18T21:40:09"/>
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSigFigWhenFourBandsWithBlackBlack" time="0.000" timestamp="2018-10-18T21:40:09"/>
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSigFigWhenFourBandsWithBlackBrown" time="0.000" timestamp="2018-10-18T21:40:09"/>
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSigFigWhenFourBandsWithBlackOrange" time="0.000" timestamp="2018-10-18T21:40:09"/>
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSigFigWhenFourBandsWithBlackRed" time="0.000" timestamp="2018-10-18T21:40:09"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

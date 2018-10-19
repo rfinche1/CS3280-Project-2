@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="decode_significant_figures_tests.TestDecodeSignificantFiguresTests-20181018213047" skipped="0" tests="2" time="0.000" timestamp="2018-10-18T21:30:47">
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSignificantFiguresWhenFiveBandsWithBlackInThreeBands" time="0.000" timestamp="2018-10-18T21:30:47"/>
+	<testcase classname="decode_significant_figures_tests.TestDecodeSignificantFiguresTests" name="testDecodeSignificantFiguresWhenFourBandsWithBlackInBothBands" time="0.000" timestamp="2018-10-18T21:30:47"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
