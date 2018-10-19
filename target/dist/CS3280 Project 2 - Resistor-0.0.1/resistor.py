@@ -358,12 +358,3 @@ def createFormattedResistanceString(colors):
     return str(sigFig * multiplierNum) + str(
         multiplierUnit) + ' ohms +/- ' + str(
         tolerance) + '%'
-
-'''
-colors = ['black', 'black', 'black', 'brown']
-result = createFormattedResistanceString(colors)
-expected = "0 ohms +/- 1.0%"
-
-if result == expected:
-    print("They're the same.")
-'''

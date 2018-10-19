@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests-20181019180608" skipped="0" tests="1" time="0.000" timestamp="2018-10-19T18:06:08">
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackBrown" time="0.000" timestamp="2018-10-19T18:06:08"/>
+	<system-out>
+<![CDATA[0
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
