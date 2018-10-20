@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="15" name="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests-20181019191050" skipped="0" tests="15" time="0.006" timestamp="2018-10-19T19:10:51">
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFiveBandYellowGreenBlueBlueBlue" time="0.001" timestamp="2018-10-19T19:10:51">
+		<failure message="'456M ohms +/- 0.25%' != &quot;456 M ' ohms +/- 0.25%&quot;
+- 456M ohms +/- 0.25%
++ 456 M ' ohms +/- 0.25%
+?    + ++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 80, in testCreateFormattedResistanceStringFiveBandYellowGreenBlueBlueBlue
+    self.assertEquals("456M ohms +/- 0.25%", result)
+AssertionError: '456M ohms +/- 0.25%' != "456 M ' ohms +/- 0.25%"
+- 456M ohms +/- 0.25%
++ 456 M ' ohms +/- 0.25%
+?    + ++
+
+]]>		</failure>
+	</testcase>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackBlue" time="0.001" timestamp="2018-10-19T19:10:51">
+		<failure message="'0 ohms +/- 0.25%' != &quot;0  ' ohms +/- 0.25%&quot;
+- 0 ohms +/- 0.25%
++ 0  ' ohms +/- 0.25%
+?  +++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 25, in testCreateFormattedResistanceStringFourBandBlackBlackBlackBlue
+    self.assertEquals("0 ohms +/- 0.25%", result)
+AssertionError: '0 ohms +/- 0.25%' != "0  ' ohms +/- 0.25%"
+- 0 ohms +/- 0.25%
++ 0  ' ohms +/- 0.25%
+?  +++
+
+]]>		</failure>
+	</testcase>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackBrown" time="0.000" timestamp="2018-10-19T19:10:51">
+		<failure message="'0 ohms +/- 1.0%' != &quot;0  ' ohms +/- 1.0%&quot;
+- 0 ohms +/- 1.0%
++ 0  ' ohms +/- 1.0%
+?  +++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 10, in testCreateFormattedResistanceStringFourBandBlackBlackBlackBrown
+    self.assertEquals("0 ohms +/- 1.0%", result)
+AssertionError: '0 ohms +/- 1.0%' != "0  ' ohms +/- 1.0%"
+- 0 ohms +/- 1.0%
++ 0  ' ohms +/- 1.0%
+?  +++
+
+]]>		</failure>
+	</testcase>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackGold" time="0.000" timestamp="2018-10-19T19:10:51">
+		<failure message="'0 ohms +/- 5.0%' != &quot;0  ' ohms +/- 5.0%&quot;
+- 0 ohms +/- 5.0%
++ 0  ' ohms +/- 5.0%
+?  +++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 40, in testCreateFormattedResistanceStringFourBandBlackBlackBlackGold
+    self.assertEquals("0 ohms +/- 5.0%", result)
+AssertionError: '0 ohms +/- 5.0%' != "0  ' ohms +/- 5.0%"
+- 0 ohms +/- 5.0%
++ 0  ' ohms +/- 5.0%
+?  +++
+
+]]>		</failure>
+	</testcase>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackGreen" time="0.000" timestamp="2018-10-19T19:10:51">
+		<failure message="'0 ohms +/- 0.5%' != &quot;0  ' ohms +/- 0.5%&quot;
+- 0 ohms +/- 0.5%
++ 0  ' ohms +/- 0.5%
+?  +++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 20, in testCreateFormattedResistanceStringFourBandBlackBlackBlackGreen
+    self.assertEquals("0 ohms +/- 0.5%", result)
+AssertionError: '0 ohms +/- 0.5%' != "0  ' ohms +/- 0.5%"
+- 0 ohms +/- 0.5%
++ 0  ' ohms +/- 0.5%
+?  +++
+
+]]>		</failure>
+	</testcase>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackGrey" time="0.000" timestamp="2018-10-19T19:10:51">
+		<failure message="'0 ohms +/- 0.05%' != &quot;0  ' ohms +/- 0.05%&quot;
+- 0 ohms +/- 0.05%
++ 0  ' ohms +/- 0.05%
+?  +++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 35, in testCreateFormattedResistanceStringFourBandBlackBlackBlackGrey
+    self.assertEquals("0 ohms +/- 0.05%", result)
+AssertionError: '0 ohms +/- 0.05%' != "0  ' ohms +/- 0.05%"
+- 0 ohms +/- 0.05%
++ 0  ' ohms +/- 0.05%
+?  +++
+
+]]>		</failure>
+	</testcase>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackNone" time="0.000" timestamp="2018-10-19T19:10:51">
+		<failure message="'0 ohms +/- 20.0%' != &quot;0  ' ohms +/- 20.0%&quot;
+- 0 ohms +/- 20.0%
++ 0  ' ohms +/- 20.0%
+?  +++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 50, in testCreateFormattedResistanceStringFourBandBlackBlackBlackNone
+    self.assertEquals("0 ohms +/- 20.0%", result)
+AssertionError: '0 ohms +/- 20.0%' != "0  ' ohms +/- 20.0%"
+- 0 ohms +/- 20.0%
++ 0  ' ohms +/- 20.0%
+?  +++
+
+]]>		</failure>
+	</testcase>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackRed" time="0.000" timestamp="2018-10-19T19:10:51">
+		<failure message="'0 ohms +/- 2.0%' != &quot;0  ' ohms +/- 2.0%&quot;
+- 0 ohms +/- 2.0%
++ 0  ' ohms +/- 2.0%
+?  +++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 15, in testCreateFormattedResistanceStringFourBandBlackBlackBlackRed
+    self.assertEquals("0 ohms +/- 2.0%", result)
+AssertionError: '0 ohms +/- 2.0%' != "0  ' ohms +/- 2.0%"
+- 0 ohms +/- 2.0%
++ 0  ' ohms +/- 2.0%
+?  +++
+
+]]>		</failure>
+	</testcase>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackSilver" time="0.000" timestamp="2018-10-19T19:10:51">
+		<failure message="'0 ohms +/- 10.0%' != &quot;0  ' ohms +/- 10.0%&quot;
+- 0 ohms +/- 10.0%
++ 0  ' ohms +/- 10.0%
+?  +++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 45, in testCreateFormattedResistanceStringFourBandBlackBlackBlackSilver
+    self.assertEquals("0 ohms +/- 10.0%", result)
+AssertionError: '0 ohms +/- 10.0%' != "0  ' ohms +/- 10.0%"
+- 0 ohms +/- 10.0%
++ 0  ' ohms +/- 10.0%
+?  +++
+
+]]>		</failure>
+	</testcase>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackViolet" time="0.000" timestamp="2018-10-19T19:10:51">
+		<failure message="'0 ohms +/- 0.1%' != &quot;0  ' ohms +/- 0.1%&quot;
+- 0 ohms +/- 0.1%
++ 0  ' ohms +/- 0.1%
+?  +++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 30, in testCreateFormattedResistanceStringFourBandBlackBlackBlackViolet
+    self.assertEquals("0 ohms +/- 0.1%", result)
+AssertionError: '0 ohms +/- 0.1%' != "0  ' ohms +/- 0.1%"
+- 0 ohms +/- 0.1%
++ 0  ' ohms +/- 0.1%
+?  +++
+
+]]>		</failure>
+	</testcase>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBrownBlackBlackBrown" time="0.000" timestamp="2018-10-19T19:10:51">
+		<failure message="'10 ohms +/- 1.0%' != &quot;10  ' ohms +/- 1.0%&quot;
+- 10 ohms +/- 1.0%
++ 10  ' ohms +/- 1.0%
+?   +++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 55, in testCreateFormattedResistanceStringFourBandBrownBlackBlackBrown
+    self.assertEquals("10 ohms +/- 1.0%", result)
+AssertionError: '10 ohms +/- 1.0%' != "10  ' ohms +/- 1.0%"
+- 10 ohms +/- 1.0%
++ 10  ' ohms +/- 1.0%
+?   +++
+
+]]>		</failure>
+	</testcase>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBrownBlackBlackRed" time="0.000" timestamp="2018-10-19T19:10:51">
+		<failure message="'10 ohms +/- 2.0%' != &quot;10  ' ohms +/- 2.0%&quot;
+- 10 ohms +/- 2.0%
++ 10  ' ohms +/- 2.0%
+?   +++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 60, in testCreateFormattedResistanceStringFourBandBrownBlackBlackRed
+    self.assertEquals("10 ohms +/- 2.0%", result)
+AssertionError: '10 ohms +/- 2.0%' != "10  ' ohms +/- 2.0%"
+- 10 ohms +/- 2.0%
++ 10  ' ohms +/- 2.0%
+?   +++
+
+]]>		</failure>
+	</testcase>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandGreenGreenGreenRed" time="0.000" timestamp="2018-10-19T19:10:51">
+		<failure message="'5500K ohms +/- 2.0%' != &quot;5500 K ' ohms +/- 2.0%&quot;
+- 5500K ohms +/- 2.0%
++ 5500 K ' ohms +/- 2.0%
+?     + ++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 70, in testCreateFormattedResistanceStringFourBandGreenGreenGreenRed
+    self.assertEquals("5500K ohms +/- 2.0%", result)
+AssertionError: '5500K ohms +/- 2.0%' != "5500 K ' ohms +/- 2.0%"
+- 5500K ohms +/- 2.0%
++ 5500 K ' ohms +/- 2.0%
+?     + ++
+
+]]>		</failure>
+	</testcase>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandGreyBlueGreyNone" time="0.000" timestamp="2018-10-19T19:10:51">
+		<failure message="'8600M ohms +/- 20.0%' != &quot;8600 M ' ohms +/- 20.0%&quot;
+- 8600M ohms +/- 20.0%
++ 8600 M ' ohms +/- 20.0%
+?     + ++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 75, in testCreateFormattedResistanceStringFourBandGreyBlueGreyNone
+    self.assertEquals("8600M ohms +/- 20.0%", result)
+AssertionError: '8600M ohms +/- 20.0%' != "8600 M ' ohms +/- 20.0%"
+- 8600M ohms +/- 20.0%
++ 8600 M ' ohms +/- 20.0%
+?     + ++
+
+]]>		</failure>
+	</testcase>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandOrangeYellowBrownGrey" time="0.000" timestamp="2018-10-19T19:10:51">
+		<failure message="'340 ohms +/- 0.05%' != &quot;340  ' ohms +/- 0.05%&quot;
+- 340 ohms +/- 0.05%
++ 340  ' ohms +/- 0.05%
+?    +++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 65, in testCreateFormattedResistanceStringFourBandOrangeYellowBrownGrey
+    self.assertEquals('340 ohms +/- 0.05%', result)
+AssertionError: '340 ohms +/- 0.05%' != "340  ' ohms +/- 0.05%"
+- 340 ohms +/- 0.05%
++ 340  ' ohms +/- 0.05%
+?    +++
+
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

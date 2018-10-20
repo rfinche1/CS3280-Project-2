@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests-20181019185400" skipped="0" tests="14" time="0.001" timestamp="2018-10-19T18:54:01">
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackBlue" time="0.000" timestamp="2018-10-19T18:54:01"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackBrown" time="0.000" timestamp="2018-10-19T18:54:01"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackGold" time="0.000" timestamp="2018-10-19T18:54:01"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackGreen" time="0.000" timestamp="2018-10-19T18:54:01"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackGrey" time="0.000" timestamp="2018-10-19T18:54:01"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackNone" time="0.000" timestamp="2018-10-19T18:54:01"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackRed" time="0.000" timestamp="2018-10-19T18:54:01"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackSilver" time="0.000" timestamp="2018-10-19T18:54:01"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackViolet" time="0.000" timestamp="2018-10-19T18:54:01"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBrownBlackBlackBrown" time="0.000" timestamp="2018-10-19T18:54:01"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBrownBlackBlackRed" time="0.000" timestamp="2018-10-19T18:54:01"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandGreenGreenGreenRed" time="0.000" timestamp="2018-10-19T18:54:01"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandGreyBlueGreyNone" time="0.000" timestamp="2018-10-19T18:54:01"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandOrangeYellowBrownGrey" time="0.000" timestamp="2018-10-19T18:54:01"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

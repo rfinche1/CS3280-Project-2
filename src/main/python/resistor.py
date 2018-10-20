@@ -2,7 +2,7 @@ valid_colors = ['black', 'brown', 'red', 'orange',
                 'yellow', 'green', 'blue', 'violet',
                 'grey', 'white', 'gold', 'silver', 'none']
 
-'''
+
 valid_four_band_colors = {'band1': ['black', 'brown', 'red', 'orange',
                                     'yellow', 'green', 'blue', 'violet',
                                     'grey', 'white'],
@@ -12,17 +12,16 @@ valid_four_band_colors = {'band1': ['black', 'brown', 'red', 'orange',
                           'band3': ['black', 'brown', 'red', 'orange',
                                     'yellow', 'green', 'blue', 'violet',
                                     'grey', 'white', 'gold', 'silver'],
-                          'band4': ['brown', 'red', 'green', 'blue'
+                          'band4': ['brown', 'red', 'green', 'blue',
                                     'violet', 'grey', 'gold', 'silver',
                                     'none']}
-'''
 
 tolerances = {'brown': 1.0,
               'red': 2.0,
               'green': 0.5,
               'blue': 0.25,
               'violet': 0.1,
-              'grey': 0.5,
+              'grey': 0.05,
               'gold': 5.0,
               'silver': 10.0,
               'none': 20.0}
@@ -349,12 +348,38 @@ def decodeSignificantFigures(colors):
 
 
 def createFormattedResistanceString(colors):
+    '''
+    Creates a string with a full description of the resistor.
+
+    @param colors   the list of colors
+
+    @return a string with a full description of the resistor.
+    '''
     validateColorsList(colors)
+
     sigFig = decodeSignificantFigures(colors)
-    print(sigFig)
-    multiplierNum, multiplierUnit = decodeMultiplier(colors)
+    multiplierNumber, multiplierUnit = decodeMultiplier(colors)
     tolerance = decodeTolerance(colors)
 
-    return str(sigFig * multiplierNum) + str(
-        multiplierUnit) + ' ohms +/- ' + str(
-        tolerance) + '%'
+    return f"{round(sigFig * multiplierNumber, 2)} {multiplierUnit}ohms +/- {tolerance}%"
+
+
+def decodeResistance(colors):
+    '''
+    Returns a dictionary representing a resistor.
+
+    @params colors  the colors list
+
+    @return a dictionary representing a resistor.
+    '''
+    validateColorsList(colors)
+    result = {}
+    multiplierNumber, multiplierUnit = decodeMultiplier(colors)
+    
+    result['value'] = decodeSignificantFigures(colors) * multiplierNumber
+    result['units'] = str(multiplierUnit) + 'ohms'
+    result['tolerance'] = decodeTolerance(colors)
+    result['formatted'] = createFormattedResistanceString(colors)
+
+    return result
+

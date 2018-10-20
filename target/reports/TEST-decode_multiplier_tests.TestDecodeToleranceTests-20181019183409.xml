@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="decode_multiplier_tests.TestDecodeToleranceTests-20181019183409" skipped="0" tests="12" time="0.001" timestamp="2018-10-19T18:34:10">
+	<testcase classname="decode_multiplier_tests.TestDecodeToleranceTests" name="testDecodeMultiplierFiveBandWhenMultiplerBandIsBlue" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="decode_multiplier_tests.TestDecodeToleranceTests" name="testDecodeMultiplierFiveBandWhenMultiplerBandIsBrown" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="decode_multiplier_tests.TestDecodeToleranceTests" name="testDecodeMultiplierFiveBandWhenMultiplerBandIsGold" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="decode_multiplier_tests.TestDecodeToleranceTests" name="testDecodeMultiplierFiveBandWhenMultiplerBandIsGreen" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="decode_multiplier_tests.TestDecodeToleranceTests" name="testDecodeMultiplierFiveBandWhenMultiplerBandIsGrey" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="decode_multiplier_tests.TestDecodeToleranceTests" name="testDecodeMultiplierFiveBandWhenMultiplerBandIsOrange" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="decode_multiplier_tests.TestDecodeToleranceTests" name="testDecodeMultiplierFiveBandWhenMultiplerBandIsRed" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="decode_multiplier_tests.TestDecodeToleranceTests" name="testDecodeMultiplierFiveBandWhenMultiplerBandIsSilver" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="decode_multiplier_tests.TestDecodeToleranceTests" name="testDecodeMultiplierFiveBandWhenMultiplerBandIsViolet" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="decode_multiplier_tests.TestDecodeToleranceTests" name="testDecodeMultiplierFiveBandWhenMultiplerBandIsWhite" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="decode_multiplier_tests.TestDecodeToleranceTests" name="testDecodeMultiplierFiveBandWhenMultiplerBandIsYellow" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="decode_multiplier_tests.TestDecodeToleranceTests" name="testDecodeMultiplierFiveBandWhenMultiplierBandIsBlack" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

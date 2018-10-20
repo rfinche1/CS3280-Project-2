@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests-20181019183409" skipped="0" tests="8" time="0.001" timestamp="2018-10-19T18:34:10">
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackBlue" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackBrown" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackGold" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackGreen" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackGrey" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackRed" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackSilver" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackViolet" time="0.000" timestamp="2018-10-19T18:34:10"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

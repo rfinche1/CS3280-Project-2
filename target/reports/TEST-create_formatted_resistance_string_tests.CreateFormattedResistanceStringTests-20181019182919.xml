@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests-20181019182919" skipped="0" tests="5" time="0.002" timestamp="2018-10-19T18:29:19">
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackBlue" time="0.000" timestamp="2018-10-19T18:29:19"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackBrown" time="0.000" timestamp="2018-10-19T18:29:19"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackGreen" time="0.000" timestamp="2018-10-19T18:29:19"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackRed" time="0.000" timestamp="2018-10-19T18:29:19"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlackBlackBlackViolent" time="0.001" timestamp="2018-10-19T18:29:19">
+		<failure message="'0 ohms +/- 0.5%' != '0 ohms +/- 0.1%'
+- 0 ohms +/- 0.5%
+?              ^
++ 0 ohms +/- 0.1%
+?              ^
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 30, in testCreateFormattedResistanceStringFourBandBlackBlackBlackViolent
+    self.assertEquals("0 ohms +/- 0.5%", result)
+AssertionError: '0 ohms +/- 0.5%' != '0 ohms +/- 0.1%'
+- 0 ohms +/- 0.5%
+?              ^
++ 0 ohms +/- 0.1%
+?              ^
+
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[0
+0
+0
+0
+0
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
