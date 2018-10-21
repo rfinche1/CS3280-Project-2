@@ -2,53 +2,45 @@ valid_colors = ['black', 'brown', 'red', 'orange',
                 'yellow', 'green', 'blue', 'violet',
                 'grey', 'white', 'gold', 'silver', 'none']
 
+tolerances = {
+    'brown': 1.0,
+    'red': 2.0,
+    'green': 0.5,
+    'blue': 0.25,
+    'violet': 0.1,
+    'grey': 0.05,
+    'gold': 5.0,
+    'silver': 10.0,
+    'none': 20.0
+}
 
-valid_four_band_colors = {'band1': ['black', 'brown', 'red', 'orange',
-                                    'yellow', 'green', 'blue', 'violet',
-                                    'grey', 'white'],
-                          'band2': ['black', 'brown', 'red', 'orange',
-                                    'yellow', 'green', 'blue', 'violet',
-                                    'grey', 'white'],
-                          'band3': ['black', 'brown', 'red', 'orange',
-                                    'yellow', 'green', 'blue', 'violet',
-                                    'grey', 'white', 'gold', 'silver'],
-                          'band4': ['brown', 'red', 'green', 'blue',
-                                    'violet', 'grey', 'gold', 'silver',
-                                    'none']}
+multipliers = {
+    'black': (1, ''),
+    'brown': (10, ''),
+    'red': (100, ''),
+    'orange': (1, 'K'),
+    'yellow': (10, 'K'),
+    'green': (100, 'K'),
+    'blue': (1, 'M'),
+    'violet': (10, 'M'),
+    'grey': (100, 'M'),
+    'white': (1, 'G'),
+    'gold': (0.1, ''),
+    'silver': (0.01, '')
+}
 
-tolerances = {'brown': 1.0,
-              'red': 2.0,
-              'green': 0.5,
-              'blue': 0.25,
-              'violet': 0.1,
-              'grey': 0.05,
-              'gold': 5.0,
-              'silver': 10.0,
-              'none': 20.0}
-
-multipliers = {'black': (1, ''),
-               'brown': (10, ''),
-               'red': (100, ''),
-               'orange': (1, 'K'),
-               'yellow': (10, 'K'),
-               'green': (100, 'K'),
-               'blue': (1, 'M'),
-               'violet': (10, 'M'),
-               'grey': (100, 'M'),
-               'white': (1, 'G'),
-               'gold': (0.1, ''),
-               'silver': (0.01, '')}
-
-significantFigures = {'black': 0,
-                      'brown': 1,
-                      'red': 2,
-                      'orange': 3,
-                      'yellow': 4,
-                      'green': 5,
-                      'blue': 6,
-                      'violet': 7,
-                      'grey': 8,
-                      'white': 9}
+significantFigures = {
+    'black': 0,
+    'brown': 1,
+    'red': 2,
+    'orange': 3,
+    'yellow': 4,
+    'green': 5,
+    'blue': 6,
+    'violet': 7,
+    'grey': 8,
+    'white': 9
+}
 
 
 def validateColorsList(colors):
@@ -357,11 +349,46 @@ def createFormattedResistanceString(colors):
     '''
     validateColorsList(colors)
 
-    sigFig = decodeSignificantFigures(colors)
+    significantFigures = decodeSignificantFigures(colors)
     multiplierNumber, multiplierUnit = decodeMultiplier(colors)
+    multipliedSignificantFigures = round(
+        significantFigures * multiplierNumber, 2)
+
+    multipliedSignificantFigures, multiplierUnit = _correctResistanceUnits(
+        multipliedSignificantFigures, multiplierUnit)
+
     tolerance = decodeTolerance(colors)
 
-    return f"{round(sigFig * multiplierNumber, 2)} {multiplierUnit}ohms +/- {tolerance}%"
+    return "{} {}ohms +/- {}%".format(
+        multipliedSignificantFigures,
+        multiplierUnit,
+        tolerance)
+
+
+def _correctResistanceUnits(multipliedSignificantFigures, multiplierUnit):
+    '''
+    Corrects resistance in cases where multiplier causes number to roll
+    over to next unit. E.g. if result is 1000 Ohms it will correct it to
+    1 Kohms.
+
+    @param multipliedSignificantFigures    the result of multiplying the
+    significant figures by the multiplier
+
+    @param multiplierUnit   the unit E.g. K, M, or G
+
+    @return a tuple containing the corrected multiplied number and unit
+    '''
+    if multipliedSignificantFigures < 1000:
+        return (multipliedSignificantFigures, multiplierUnit)
+
+    else:
+        units = {
+            '': 'K',
+            'K': 'M',
+            'M': 'G'
+        }
+        multipliedSignificantFigures = multipliedSignificantFigures / 1000
+        return (multipliedSignificantFigures, units[multiplierUnit])
 
 
 def decodeResistance(colors):
@@ -375,11 +402,12 @@ def decodeResistance(colors):
     validateColorsList(colors)
     result = {}
     multiplierNumber, multiplierUnit = decodeMultiplier(colors)
-    
+
     result['value'] = decodeSignificantFigures(colors) * multiplierNumber
     result['units'] = str(multiplierUnit) + 'ohms'
     result['tolerance'] = decodeTolerance(colors)
     result['formatted'] = createFormattedResistanceString(colors)
 
     return result
+
 
