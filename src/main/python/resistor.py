@@ -414,6 +414,3 @@ def decodeResistance(colors):
     result['formatted'] = createFormattedResistanceString(colors)
 
     return result
-
-
-print(decodeResistance(['red', 'orange', 'black', 'black', 'brown']))

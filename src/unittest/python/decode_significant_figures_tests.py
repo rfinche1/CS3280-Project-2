@@ -4,33 +4,6 @@ from resistor import *
 
 class TestDecodeSignificantFiguresTests(unittest.TestCase):
 
-    def testDecodeFourBandSignificantFigures(self):
-
-        colors = ['black', 'brown', 'red', 'orange',
-                  'yellow', 'green', 'blue', 'violet',
-                  'grey', 'white']
-        
-        count = 0
-        for color1 in colors:
-            for color2 in colors:
-                bands = [color1, color2, 'brown', 'red']
-                self.assertEquals(count, decodeSignificantFigures(bands))
-                count += 1
-
-    def testDecodeFiveBandSignificantFigures(self):
-
-        colors = ['black', 'brown', 'red', 'orange',
-                  'yellow', 'green', 'blue', 'violet',
-                  'grey', 'white']
-        count = 0
-        
-        for color1 in colors:
-            for color2 in colors:
-                for color3 in colors:
-                    bands = [color1, color2, color3, 'brown', 'red']
-                    self.assertEquals(count, decodeSignificantFigures(bands))
-                    count += 1
-
     def testDecodeSigFigWhenFourBandsWithBlackBlack(self):
         colors = ['black', 'black', 'brown', 'red']
         self.assertEquals(0, decodeSignificantFigures(colors))

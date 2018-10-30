@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="decode_resistance_tests.DecodeResistanceTests-20181030143923" skipped="0" tests="8" time="0.001" timestamp="2018-10-30T14:39:24">
+	<testcase classname="decode_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFiveBandResistorGohms" time="0.000" timestamp="2018-10-30T14:39:24"/>
+	<testcase classname="decode_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFiveBandResistorKohms" time="0.000" timestamp="2018-10-30T14:39:24"/>
+	<testcase classname="decode_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFiveBandResistorMohms" time="0.000" timestamp="2018-10-30T14:39:24"/>
+	<testcase classname="decode_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFiveBandResistorOhms" time="0.000" timestamp="2018-10-30T14:39:24"/>
+	<testcase classname="decode_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFourBandResistorGohms" time="0.000" timestamp="2018-10-30T14:39:24"/>
+	<testcase classname="decode_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFourBandResistorKohms" time="0.000" timestamp="2018-10-30T14:39:24"/>
+	<testcase classname="decode_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFourBandResistorMohms" time="0.000" timestamp="2018-10-30T14:39:24"/>
+	<testcase classname="decode_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFourBandResistorOhms" time="0.000" timestamp="2018-10-30T14:39:24"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
