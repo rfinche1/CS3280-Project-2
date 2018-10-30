@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests-20181024184946" skipped="0" tests="9" time="0.001" timestamp="2018-10-24T18:49:47">
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlueOrangeGreenGrey" time="0.000" timestamp="2018-10-24T18:49:47"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandGreenBlueBrownRed" time="0.000" timestamp="2018-10-24T18:49:47"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandGreenWhiteBlueGold" time="0.000" timestamp="2018-10-24T18:49:47"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandGreyBlackGreyBrown" time="0.000" timestamp="2018-10-24T18:49:47"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandRedBrownBlackBrown" time="0.000" timestamp="2018-10-24T18:49:47"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandRedGreyYellowViolet" time="0.000" timestamp="2018-10-24T18:49:47"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandVioletGreyRedGreen" time="0.000" timestamp="2018-10-24T18:49:47"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandVioletRedVioletSilver" time="0.000" timestamp="2018-10-24T18:49:47"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandWhiteOrangeOrangeBlue" time="0.000" timestamp="2018-10-24T18:49:47"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests-20181024185724" skipped="0" tests="12" time="0.002" timestamp="2018-10-24T18:57:24">
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlueOrangeGreenGrey" time="0.000" timestamp="2018-10-24T18:57:24"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandGreenBlueBrownRed" time="0.000" timestamp="2018-10-24T18:57:24"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandGreenWhiteBlueGold" time="0.000" timestamp="2018-10-24T18:57:24"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandGreyBlackGreyBrown" time="0.000" timestamp="2018-10-24T18:57:24"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandOrangeBlueWhiteRed" time="0.000" timestamp="2018-10-24T18:57:24"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandRedBrownBlackBrown" time="0.000" timestamp="2018-10-24T18:57:24"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandRedGreyYellowViolet" time="0.000" timestamp="2018-10-24T18:57:24"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandVioletGreyRedGreen" time="0.000" timestamp="2018-10-24T18:57:24"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandVioletRedVioletSilver" time="0.000" timestamp="2018-10-24T18:57:24"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandVioletVioletGoldGreen" time="0.000" timestamp="2018-10-24T18:57:24"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandWhiteOrangeOrangeBlue" time="0.000" timestamp="2018-10-24T18:57:24"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandWhiteBlackSilverBlue" time="0.001" timestamp="2018-10-24T18:57:24">
+		<failure message="'.9 ohms +/- 0.25%' != '0.9 ohms +/- 0.25%'
+- .9 ohms +/- 0.25%
++ 0.9 ohms +/- 0.25%
+? +
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 64, in testCreateFormattedResistanceStringFourBandWhiteBlackSilverBlue
+    self.assertEquals(".9 ohms +/- 0.25%", result)
+AssertionError: '.9 ohms +/- 0.25%' != '0.9 ohms +/- 0.25%'
+- .9 ohms +/- 0.25%
++ 0.9 ohms +/- 0.25%
+? +
+
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

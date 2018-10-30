@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="decoded_resistance_tests.DecodeResistanceTests-20181030113355" skipped="0" tests="2" time="0.001" timestamp="2018-10-30T11:33:55">
+	<testcase classname="decoded_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFourBandResistorOhms" time="0.000" timestamp="2018-10-30T11:33:55"/>
+	<testcase classname="decoded_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFourBandResistorKohms" time="0.001" timestamp="2018-10-30T11:33:55">
+		<failure message="{'value': 7.8, 'units': 'Kohms', 'tolerance': 0.5, '[28 chars].5%'} != {'value': 7800, 'units': 'ohms', 'tolerance': 0.5, '[28 chars].5%'}
+  {'formatted': '7.8 Kohms +/- 0.5%',
+   'tolerance': 0.5,
+-  'units': 'Kohms',
+?            -
+
++  'units': 'ohms',
+-  'value': 7.8}
+?            -
+
++  'value': 7800}
+?             ++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/decoded_resistance_tests.py", line 25, in testDecodeResistanceOnValidFourBandResistorKohms
+    self.assertEquals(expected, result)
+AssertionError: {'value': 7.8, 'units': 'Kohms', 'tolerance': 0.5, '[28 chars].5%'} != {'value': 7800, 'units': 'ohms', 'tolerance': 0.5, '[28 chars].5%'}
+  {'formatted': '7.8 Kohms +/- 0.5%',
+   'tolerance': 0.5,
+-  'units': 'Kohms',
+?            -
+
++  'units': 'ohms',
+-  'value': 7.8}
+?            -
+
++  'value': 7800}
+?             ++
+
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

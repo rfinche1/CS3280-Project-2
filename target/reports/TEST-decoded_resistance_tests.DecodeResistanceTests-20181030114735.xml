@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="decoded_resistance_tests.DecodeResistanceTests-20181030114735" skipped="0" tests="5" time="0.001" timestamp="2018-10-30T11:47:35">
+	<testcase classname="decoded_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFourBandResistorGohms" time="0.000" timestamp="2018-10-30T11:47:35"/>
+	<testcase classname="decoded_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFourBandResistorKohms" time="0.000" timestamp="2018-10-30T11:47:35"/>
+	<testcase classname="decoded_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFourBandResistorMohms" time="0.000" timestamp="2018-10-30T11:47:35"/>
+	<testcase classname="decoded_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFourBandResistorOhms" time="0.000" timestamp="2018-10-30T11:47:35"/>
+	<testcase classname="decoded_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFiveBandResistorOhms" time="0.001" timestamp="2018-10-30T11:47:35">
+		<failure message="{'val[16 chars]': 'ohms', 'tolerance': 1.0, 'formatted': '230 ohms +/- 1.0%%'} != {'val[16 chars]': 'ohms', 'tolerance': 1.0, 'formatted': '230 ohms +/- 1.0%'}
+- {'formatted': '230 ohms +/- 1.0%%',
+?                                 -
+
++ {'formatted': '230 ohms +/- 1.0%',
+   'tolerance': 1.0,
+   'units': 'ohms',
+   'value': 230}" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/decoded_resistance_tests.py", line 55, in testDecodeResistanceOnValidFiveBandResistorOhms
+    self.assertEquals(expected, result)
+AssertionError: {'val[16 chars]': 'ohms', 'tolerance': 1.0, 'formatted': '230 ohms +/- 1.0%%'} != {'val[16 chars]': 'ohms', 'tolerance': 1.0, 'formatted': '230 ohms +/- 1.0%'}
+- {'formatted': '230 ohms +/- 1.0%%',
+?                                 -
+
++ {'formatted': '230 ohms +/- 1.0%',
+   'tolerance': 1.0,
+   'units': 'ohms',
+   'value': 230}
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="2" failures="0" name="decoded_resistance_tests.DecodeResistanceTests-20181030113331" skipped="0" tests="2" time="0.001" timestamp="2018-10-30T11:33:31">
+	<testcase classname="decoded_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFourBandResistorKohms" time="0.001" timestamp="2018-10-30T11:33:31">
+		<error message="name 'assertEquals' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/decoded_resistance_tests.py", line 25, in testDecodeResistanceOnValidFourBandResistorKohms
+    assertEquals(expected, result)
+NameError: name 'assertEquals' is not defined
+]]>		</error>
+	</testcase>
+	<testcase classname="decoded_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFourBandResistorOhms" time="0.000" timestamp="2018-10-30T11:33:31">
+		<error message="name 'assertEquals' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/decoded_resistance_tests.py", line 15, in testDecodeResistanceOnValidFourBandResistorOhms
+    assertEquals(expected, result)
+NameError: name 'assertEquals' is not defined
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

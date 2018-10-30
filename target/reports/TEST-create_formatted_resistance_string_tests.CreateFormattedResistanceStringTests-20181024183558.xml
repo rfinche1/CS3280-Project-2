@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests-20181024183558" skipped="0" tests="3" time="0.001" timestamp="2018-10-24T18:35:59">
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandGreenBlueBrownRed" time="0.000" timestamp="2018-10-24T18:35:59"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandRedBrownBlackBrown" time="0.000" timestamp="2018-10-24T18:35:59"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandVioletGreyRedGreen" time="0.001" timestamp="2018-10-24T18:35:59">
+		<failure message="'7800 ohms +/- 0.5%' != '7.8 Kohms +/- 0.5%'
+- 7800 ohms +/- 0.5%
+?   ^^^
++ 7.8 Kohms +/- 0.5%
+?  + ^^
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 19, in testCreateFormattedResistanceStringFourBandVioletGreyRedGreen
+    self.assertEquals("7800 ohms +/- 0.5%", result)
+AssertionError: '7800 ohms +/- 0.5%' != '7.8 Kohms +/- 0.5%'
+- 7800 ohms +/- 0.5%
+?   ^^^
++ 7.8 Kohms +/- 0.5%
+?  + ^^
+
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" name="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests-20181024184544" skipped="0" tests="8" time="0.001" timestamp="2018-10-24T18:45:45">
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandBlueOrangeGreenGrey" time="0.000" timestamp="2018-10-24T18:45:45"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandGreenBlueBrownRed" time="0.000" timestamp="2018-10-24T18:45:45"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandGreenWhiteBlueGold" time="0.000" timestamp="2018-10-24T18:45:45"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandRedBrownBlackBrown" time="0.000" timestamp="2018-10-24T18:45:45"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandRedGreyYellowViolet" time="0.000" timestamp="2018-10-24T18:45:45"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandVioletGreyRedGreen" time="0.000" timestamp="2018-10-24T18:45:45"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandWhiteOrangeOrangeBlue" time="0.000" timestamp="2018-10-24T18:45:45"/>
+	<testcase classname="create_formatted_resistance_string_tests.CreateFormattedResistanceStringTests" name="testCreateFormattedResistanceStringFourBandVioletRedVioletSilver" time="0.001" timestamp="2018-10-24T18:45:45">
+		<error message="Silver is not a valid color." type="ValueError">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/ras/Projects/Python/cs3280/project2/src/unittest/python/create_formatted_resistance_string_tests.py", line 43, in testCreateFormattedResistanceStringFourBandVioletRedVioletSilver
+    result = createFormattedResistanceString(colors)
+  File "/Users/ras/Projects/Python/cs3280/project2/src/main/python/resistor.py", line 351, in createFormattedResistanceString
+    validateColorsList(colors)
+  File "/Users/ras/Projects/Python/cs3280/project2/src/main/python/resistor.py", line 68, in validateColorsList
+    _colorsContainsOnlyValidColors(colors)
+  File "/Users/ras/Projects/Python/cs3280/project2/src/main/python/resistor.py", line 254, in _colorsContainsOnlyValidColors
+    raise ValueError(str(band) + ' is not a valid color.')
+ValueError: Silver is not a valid color.
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

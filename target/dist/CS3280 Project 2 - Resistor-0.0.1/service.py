@@ -4,9 +4,22 @@ from http.server import BaseHTTPRequestHandler
 from resistor import *
 from urllib.parse import urlparse
 from urllib.parse import parse_qs
+import re
 
 HOST_NAME = 'localhost'
 PORT_NUMBER = 8000
+
+PAGE_404_MESSAGE = '''
+                   <html><head><title>404 - Page Not Found</title></head>
+                   <body><p>Sorry, that page does not exist.</p></body>
+                   </html>
+                   '''
+PAGE_400_MESSAGE = '''
+                   <html><head><title>400 - Query String Error</title></head>
+                   <body><p>There was an error with the query string,
+                   please check it and try again.</p></body>
+                   </html>
+                   '''
 
 
 def run(server_class=HTTPServer, handler_class=BaseHTTPRequestHandler):
@@ -25,21 +38,26 @@ class HTTPHandler(BaseHTTPRequestHandler):
             self.send_response(404)
             self.send_header('Content-type', 'text/html')
             self.end_headers()
-            content = '''
-            <html><head><title>404 - Page Not Found</title></head>
-            <p>Sorry, that page does not exist</p>
-            </body></html>
-            '''
-            self.wfile.write(bytes(content, 'UTF-8'))
+            self.wfile.write(bytes(PAGE_404_MESSAGE, 'UTF-8'))
+        elif not self._validateUrl(self.path):
+            self.send_response(400)
+            self.send_header('Content-type', 'text/html')
+            self.end_headers()
+            self.wfile.write(bytes(PAGE_400_MESSAGE, 'UTF-8'))
         else:
             self._respond()
 
     def _handle_http(self, path):
-        errorMessage = '''
-        There was an error with the query string,
-         please check it and try again.
-        '''
         parsed_url = urlparse(path)
+
+        query = parse_qs(parsed_url.query)
+
+        if len(query.keys()) != len(query.values()):
+            self.send_response(400)
+            self.send_header('Content-type', 'text/html')
+            self.end_headers()
+            return bytes(PAGE_400_MESSAGE, 'UTF-8')
+
         colors = [value[0] for key, value
                   in parse_qs(parsed_url.query).items()]
         try:
@@ -51,18 +69,29 @@ class HTTPHandler(BaseHTTPRequestHandler):
             self.send_response(400)
             self.send_header('Content-type', 'text/html')
             self.end_headers()
-            return bytes(errorMessage, 'UTF-8')
+            return bytes(PAGE_400_MESSAGE, 'UTF-8')
 
         content = '''
         <html><head><title>Resistor Band Checker</title></head>
-        <p>{}</p>
-        </body></html>
+        <body><p>{}</p></body>
+        </html>
         '''.format(result)
         return bytes(content, 'UTF-8')
 
     def _respond(self):
         response = self._handle_http(self.path)
         self.wfile.write(response)
+
+    def _validateUrl(self, path):
+        fourBandPattern = re.compile(r'''
+            ^\/decode\?(band\d=\w+\&){3}band\d=\w+$''', re.VERBOSE)
+        fiveBandPattern = re.compile(r'''
+            ^\/decode\?(band\d=\w+\&){4}band\d=\w+$''', re.VERBOSE)
+
+        if fourBandPattern.search(path) or fiveBandPattern.search(path):
+            return True
+
+        return False
 
 
 run(handler_class=HTTPHandler)

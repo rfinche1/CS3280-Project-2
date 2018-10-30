@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="decoded_resistance_tests.DecodeResistanceTests-20181030114410" skipped="0" tests="3" time="0.000" timestamp="2018-10-30T11:44:11">
+	<testcase classname="decoded_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFourBandResistorKohms" time="0.000" timestamp="2018-10-30T11:44:11"/>
+	<testcase classname="decoded_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFourBandResistorMohms" time="0.000" timestamp="2018-10-30T11:44:11"/>
+	<testcase classname="decoded_resistance_tests.DecodeResistanceTests" name="testDecodeResistanceOnValidFourBandResistorOhms" time="0.000" timestamp="2018-10-30T11:44:11"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

@@ -266,6 +266,7 @@ def decodeTolerance(colors):
     @return a floating-point number representing the tolerance.
     '''
     validateColorsList(colors)
+
     if len(colors) == 4:
         return _decodeToleranceOfFourBandResistor(colors)
 
@@ -402,75 +403,17 @@ def decodeResistance(colors):
     validateColorsList(colors)
     result = {}
     multiplierNumber, multiplierUnit = decodeMultiplier(colors)
+    multipliedSignificantFigures = (decodeSignificantFigures(colors) *
+                                    multiplierNumber)
+    multipliedSignificantFigures, multiplierUnit = _correctResistanceUnits(
+        multipliedSignificantFigures, multiplierUnit)
 
-    result['value'] = decodeSignificantFigures(colors) * multiplierNumber
+    result['value'] = multipliedSignificantFigures
     result['units'] = str(multiplierUnit) + 'ohms'
     result['tolerance'] = decodeTolerance(colors)
     result['formatted'] = createFormattedResistanceString(colors)
 
-    return 
-
-def generateTest():
-    valid_four_band_colors = {
-        'band1': ['black', 'brown', 'red', 'orange',
-                'yellow', 'green', 'blue', 'violet',
-                'grey', 'white'],
-        'band2': ['black', 'brown', 'red', 'orange',
-                'yellow', 'green', 'blue', 'violet',
-                'grey', 'white'],
-        'band3': ['black', 'brown', 'red', 'orange',
-                'yellow', 'green', 'blue', 'violet',
-                'grey', 'white', 'gold', 'silver'],
-        'band4': ['brown', 'red', 'green', 'blue', 'violet',
-                'grey', 'gold', 'silver', 'none']
-    }
+    return result
 
 
-    filename = 'test.py'
-    f = open(filename, 'w')
-
-    f.write('import unittest\n')
-    f.write('from resistor import *\n')
-    f.write('\n')
-    f.write('class CreateFormattedResistanceStringTests(unittest.TestCase):\n\n')
-
-    list1 = valid_four_band_colors.get('band1')
-    list2 = valid_four_band_colors.get('band2')
-    list3 = valid_four_band_colors.get('band3')
-    list4 = valid_four_band_colors.get('band4')
-    #count = 0
-    for i in list4:
-        for j in list3:
-            for k in list2:
-                for l in list1:
-                    colors = [l, k, j, i]
-                    f.write(f"    def testCreateFormattedResistanceStringFourBand{l.capitalize()}{k.capitalize()}{j.capitalize()}{i.capitalize()}(self):\n")
-                    f.write(f"        colors = ['{l}', '{k}', '{j}', '{i}']\n")
-                    f.write(f"        result = createFormattedResistanceString(colors)\n")
-                    f.write(f"        self.assertEquals(\"{createFormattedResistanceString(colors)}\", result)\n\n")
-                    #print(f"{l} {k} {j} {i} " + createFormattedResistanceString([l, k, j, i]))
-                    #count += 1
-
-    list1 = valid_four_band_colors.get('band1')
-    list2 = valid_four_band_colors.get('band2')
-    list3 = valid_four_band_colors.get('band2')
-    list4 = valid_four_band_colors.get('band3')
-    list5 = valid_four_band_colors.get('band4')
-    #count = 0
-    for h in list5:
-        for i in list4:
-            for j in list3:
-                for k in list2:
-                    for l in list1:
-                        colors = [l, k, j, i, h]
-                        f.write(f"    def testCreateFormattedResistanceStringFiveBand{l.capitalize()}{k.capitalize()}{j.capitalize()}{i.capitalize()}(self):\n")
-                        f.write(f"        colors = ['{l}', '{k}', '{j}', '{i}', '{h}']\n")
-                        f.write(f"        result = createFormattedResistanceString(colors)\n")
-                        f.write(f"        self.assertEquals(\"{createFormattedResistanceString(colors)}\", result)\n\n")
-
-#print(count)
-
-def capitalize(word):
-    return word.capitalize
-
-generateTest()
+print(decodeResistance(['red', 'orange', 'black', 'black', 'brown']))

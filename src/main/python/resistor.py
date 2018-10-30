@@ -266,6 +266,7 @@ def decodeTolerance(colors):
     @return a floating-point number representing the tolerance.
     '''
     validateColorsList(colors)
+
     if len(colors) == 4:
         return _decodeToleranceOfFourBandResistor(colors)
 
@@ -402,8 +403,12 @@ def decodeResistance(colors):
     validateColorsList(colors)
     result = {}
     multiplierNumber, multiplierUnit = decodeMultiplier(colors)
+    multipliedSignificantFigures = (decodeSignificantFigures(colors) *
+                                    multiplierNumber)
+    multipliedSignificantFigures, multiplierUnit = _correctResistanceUnits(
+        multipliedSignificantFigures, multiplierUnit)
 
-    result['value'] = decodeSignificantFigures(colors) * multiplierNumber
+    result['value'] = multipliedSignificantFigures
     result['units'] = str(multiplierUnit) + 'ohms'
     result['tolerance'] = decodeTolerance(colors)
     result['formatted'] = createFormattedResistanceString(colors)
@@ -411,3 +416,4 @@ def decodeResistance(colors):
     return result
 
 
+print(decodeResistance(['red', 'orange', 'black', 'black', 'brown']))
